@@ -5,8 +5,8 @@
 # NLib - NVIDIA NURBS library (standalone build, NURBS algorithms only)
 # -----------------------------------------------------------------------------
 # Builds NLib without the SMLib / B-Rep kernel. The NURBS algorithms are
-# self-contained; the few SMLib symbols they reference are supplied by the
-# compatibility header nlib/inc/SmSmlibAll.h.
+# self-contained; the few SMLib symbols they reference are defined directly
+# in nlib/inc/StdAfx.h.
 #
 # Windows (Visual Studio project):
 #     cmake -S . -B build -G "Visual Studio 17 2022" -A x64
